@@ -5,16 +5,24 @@ const scriptTopo = () => {
     $('.carrinhoPosition').animate({ width: 'toggle' }, 300);
   });
 
+  $('#icon1').click(function () {
+    $('.loginPosition').animate({ width: 'hide' }, 300);
+  });
+
   $('#exitCarrinho').click(function () {
     $('.carrinhoPosition').animate({ width: 'hide' }, 300);
   });
 
   $('#icon2').click(function () {
-    $('.loginPosition').animate({ width: 'toggle' }, 300);
+    $('.loginPosition').animate({ height: 'toggle' }, 300);
+  });
+
+  $('#icon2').click(function () {
+    $('.carrinhoPosition').animate({ height: 'hide' }, 300);
   });
 
   $('.menu').click(function () {
-    $('.loginPosition').animate({ width: 'toggle' }, 300);
+    $('.loginPosition').animate({ height: 'toggle' }, 300);
   });
 
   $('.caixaDePesquisa').on('click', function () {

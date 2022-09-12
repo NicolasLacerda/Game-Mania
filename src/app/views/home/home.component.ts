@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import scriptCarousel from './scriptCarousel';
 import scriptVitrine from './scriptVitrine';
-import scriptTopo from './scriptTopo';
 import * as $ from 'jquery';
 
 @Component({
@@ -13,8 +12,6 @@ import * as $ from 'jquery';
     './CSS/stylesCorpo1.css',
     './CSS/stylesCorpo2.css',
     './CSS/stylesFileiras.css',
-    './CSS/stylesFooter.css',
-    './CSS/stylesTopo.css',
     './CSS/stylesVitrine.css',
     './CSS/stylesVitrinePequena.css',
   ],
@@ -25,6 +22,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     scriptCarousel();
     scriptVitrine();
-    scriptTopo();
   }
 }

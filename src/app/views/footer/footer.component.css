@@ -55,7 +55,10 @@
 }
 
 .textoEsquerdaRodape p {
-  margin: 0;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .textoDireitaRodape {
@@ -71,6 +74,8 @@
 .pais {
   display: flex;
   justify-content: flex-end;
+  height: 100%;
+  align-items: center;
 }
 
 .t1 {
@@ -183,8 +188,8 @@
   .footer {
     height: 500px;
     border-top: 1px solid #b4b4b4;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: white;
     transition: ease all 0.5s;
   }
@@ -204,12 +209,14 @@
     display: flex;
     align-items: center;
     border-bottom: #b4b4b4 1px solid;
+    padding-right: 0px;
   }
 
   .sectionSocialFooter {
     display: flex;
     width: 100%;
     height: 200px;
+    margin-left: 0px;
     justify-content: space-between;
     align-items: center;
   }

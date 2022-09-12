@@ -1,538 +1,524 @@
 .vitrine {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  overflow: hidden;
 }
 
 .carouselPosition {
-    height: 100%;
-    width: calc(100% - 60px);
-    display: block;
+  height: 100%;
+  width: calc(100% - 60px);
+  display: block;
 }
 
-.carousel{
-    position: relative;
-    display: flex;
-    width: 500%;
-    height: 100%;
+.carousel {
+  position: relative;
+  display: flex;
+  width: 500%;
+  height: 100%;
 }
 
-.blockPosition{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
+.blockPosition {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .bloco1 {
-    width: 300px;
-    height: 100%;            
-    margin-right: 20px;
-    -webkit-font-smoothing: antialiased;
-    transition: ease all .5s;
+  width: 300px;
+  height: 100%;
+  margin-right: 20px;
+  -webkit-font-smoothing: antialiased;
+  transition: ease all 0.5s;
 }
 
 .bloco2 {
-    width: 300px;
-    height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    -webkit-font-smoothing: antialiased;
-    transition: ease all .5s;
+  width: 300px;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-font-smoothing: antialiased;
+  transition: ease all 0.5s;
 }
 
 .bloco3 {
-    width: 300px;
-    height: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-    -webkit-font-smoothing: antialiased;
-    transition: ease all .5s;
+  width: 300px;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  -webkit-font-smoothing: antialiased;
+  transition: ease all 0.5s;
 }
 
 .bloco4 {
-    width: 300px;
-    height: 100%;
-    margin-left: 20px;
-    -webkit-font-smoothing: antialiased;
-    transition: ease all .5s;
+  width: 300px;
+  height: 100%;
+  margin-left: 20px;
+  -webkit-font-smoothing: antialiased;
+  transition: ease all 0.5s;
 }
 
 .topItens {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    max-width: 300px;
-    height: 40px;
-    top: 0px;
-    justify-content: space-between;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  top: 0px;
+  justify-content: space-between;
 }
 
 .heartPosition {
-    position: absolute;
-    right: 0;
-    height: 40px;
-    width: 40px;
-    cursor: pointer;
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 .coracao {
-    background-image: url(/assets/img/Icones/coracaoVazio.png);
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    -webkit-font-smoothing: antialiased;
-    background-repeat: no-repeat;
-    background-position: center center;
+  background-image: url(/assets/img/Icones/coracaoVazio.png);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
-.heartPosition .active{
-    background-image: url(/assets/img/Icones/coracao.png);
-    -webkit-font-smoothing: antialiased;
+.heartPosition .active {
+  background-image: url(/assets/img/Icones/coracao.png);
+  -webkit-font-smoothing: antialiased;
 }
 
 .imagemAnuncio {
-    width: 100%;
-    height: 250px;
-    background-color: gainsboro;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  width: 100%;
+  height: 250px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.imagemAnuncio img{
-    transition: 0.5s;
-    object-fit: contain;
+.imagemAnuncio img {
+  transition: 0.5s;
+  object-fit: contain;
 }
 
-.imagemAnuncio img:hover{
-    transform: scale(1.05);
-    transition-duration: 1s;
-    transition-delay: 0.5s;
+.imagemAnuncio img:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+  transition-delay: 0.5s;
 }
 
-.imagemAnuncio a{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imagemAnuncio a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgGrande {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 }
 
 .imgMedia {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
 }
 
 .imgPequena {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .containerContent {
-    width: 300px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #222222;
-    transition: ease all .5s;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222222;
+  transition: ease all 0.5s;
 }
 
-.productName{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 13px;
-    padding: 10px;
-    color: white;
-    text-align: justify;
-    transition: ease all .5s;
+.productName {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  padding: 10px;
+  color: white;
+  text-align: justify;
+  transition: ease all 0.5s;
 }
 
 .bottomContent {
-    width: 100%;
-    height: 60%;
-    justify-content: space-between;
-    align-items: flex-end;
-    display: flex;
-    padding: 10px;
+  width: 100%;
+  height: 60%;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  padding: 10px;
 }
 
-.pricePosition{
-    width: 60%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    color: white;
-    flex-direction: column;
+.pricePosition {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: white;
+  flex-direction: column;
 }
 
 .cut {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    font-size: 13px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 13px;
 }
 
 .price {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    transition: ease all .5s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  transition: ease all 0.5s;
 }
 
 .priceText {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 13px;
-    transition: ease all .5s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  transition: ease all 0.5s;
 }
 
 .marketButtonPosition {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .marketButton {
-    width: 100%;
-    height: 60px;
-    border-radius: 5px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid white;
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
 }
 
-.marketButtonPosition a{
-    text-decoration: none;
-    color: #222222;
-    font-weight: bold;
+.marketButtonPosition a {
+  text-decoration: none;
+  color: #222222;
+  font-weight: bold;
 }
 
-.marketButton:hover, .marketButton a:hover{
-    background-color: transparent;
-    color: gainsboro;
-    border: 1px solid gainsboro;
+.marketButton:hover,
+.marketButton a:hover {
+  background-color: transparent;
+  color: gainsboro;
+  border: 1px solid gainsboro;
 }
 
 .blocoPixPosition {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .blocoPix {
-    width: 45px;
-    height: 25px;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    margin-left: 10px;
+  width: 45px;
+  height: 25px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  margin-left: 10px;
 }
 
-.blocoPix p{
-    font-size: 13px;
-    color: white;
+.blocoPix p {
+  font-size: 13px;
+  color: white;
 }
 
 @media only screen and (max-width: 1880px) {
+  .bloco1 {
+    margin-right: 15px;
+  }
 
-    .bloco1 {
-        margin-right: 15px;
-    }
+  .bloco2 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
-    .bloco2 {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
+  .bloco3 {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
-    .bloco3 {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .bloco4 {
-        margin-left: 15px;
-    }
-    
+  .bloco4 {
+    margin-left: 15px;
+  }
 }
 
 @media only screen and (max-width: 1800px) {
+  .bloco1 {
+    margin-right: 10px;
+    width: 275px;
+  }
 
-    .bloco1 {
-        margin-right: 10px;
-        width: 275px;
-    }
+  .bloco2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 275px;
+  }
 
-    .bloco2 {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 275px;
-    }
+  .bloco3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 275px;
+  }
 
-    .bloco3 {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 275px;
-    }
+  .bloco4 {
+    margin-left: 10px;
+    width: 275px;
+  }
 
-    .bloco4 {
-        margin-left: 10px;
-        width: 275px;
-    }
+  .topItens {
+    max-width: 275px;
+  }
 
-    .topItens {
-        max-width: 275px;
-    }
+  .imgGrande {
+    width: 275px;
+    height: 275px;
+  }
 
-    .imgGrande {
-        width: 275px;
-        height: 275px;
-    }
+  .containerContent {
+    width: 275px;
+  }
 
-    .containerContent{
-        width: 275px;
-    }
+  .price {
+    font-size: 15px;
+  }
 
-    .price {
-        font-size: 15px;
-    }
+  .priceText {
+    font-size: 10px;
+  }
 
-    .priceText {
-        font-size: 10px;
-    }
-
-    .productName{
-        font-size: 12px;
-    }
-
+  .productName {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 1600px) {
-    .bloco1 {
-        width: 250px;
-    }
+  .bloco1 {
+    width: 250px;
+  }
 
-    .bloco2 {
-        width: 250px;
-    }
+  .bloco2 {
+    width: 250px;
+  }
 
-    .bloco3 {
-        width: 250px;
-    }
+  .bloco3 {
+    width: 250px;
+  }
 
-    .bloco4 {
-        width: 250px;
-    }
+  .bloco4 {
+    width: 250px;
+  }
 
-    .imgGrande {
-        width: 250px;
-        height: 250px;
-    }
+  .imgGrande {
+    width: 250px;
+    height: 250px;
+  }
 
-    .containerContent{
-        width: 250px;
-    }
+  .containerContent {
+    width: 250px;
+  }
 
-    .topItens {
-        max-width: 250px;
-    }
+  .topItens {
+    max-width: 250px;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
-    .bloco4 {
-        display: none;
-    }
+  .bloco4 {
+    display: none;
+  }
 
-    .bloco1 {
-        width: 300px;
-    }
+  .bloco1 {
+    width: 300px;
+  }
 
-    .bloco2 {
-        width: 300px;
-    }
+  .bloco2 {
+    width: 300px;
+  }
 
-    .bloco3 {
-        width: 300px;
-    }
+  .bloco3 {
+    width: 300px;
+  }
 
-    .imgGrande {
-        width: 300px;
-    }
+  .imgGrande {
+    width: 300px;
+  }
 
-    .containerContent{
-        width: 300px;
-    }
-    
-    .topItens {
-        max-width: 300px;
-    }
+  .containerContent {
+    width: 300px;
+  }
 
+  .topItens {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
+  .bloco1 {
+    width: 250px;
+  }
 
-    .bloco1 {
-        width: 250px;
-    }
+  .bloco2 {
+    width: 250px;
+  }
 
-    .bloco2 {
-        width: 250px;
-    }
-    
-    .bloco3 {
-        width: 250px;
-    }
+  .bloco3 {
+    width: 250px;
+  }
 
-    .topItens {
-        max-width: 250px;
-    }
+  .topItens {
+    max-width: 250px;
+  }
 
-    .containerContent{
-        width: 250px;
-    }
-    
+  .containerContent {
+    width: 250px;
+  }
 }
 
 @media only screen and (max-width: 960px) {
+  .bloco1 {
+    width: 350px;
+  }
 
-    .bloco1 {
-        width: 350px;
-    }
+  .bloco2 {
+    width: 350px;
+  }
 
-    .bloco2 {
-        width: 350px;
-    }
+  .bloco3 {
+    display: none;
+  }
 
-    .bloco3 {
-        display: none;
-    }
+  .topItens {
+    max-width: 350px;
+  }
 
-    .topItens {
-        max-width: 350px;
-    }
-    
-    .containerContent{
-        width: 350px;
-    }
-
+  .containerContent {
+    width: 350px;
+  }
 }
 
 @media only screen and (max-width: 860px) {
+  .bloco1 {
+    width: 300px;
+  }
 
-    .bloco1 {
-        width: 300px;
-    }
+  .bloco2 {
+    width: 300px;
+  }
 
-    .bloco2 {
-        width: 300px;
-    }
+  .containerContent {
+    width: 300px;
+  }
 
-    .containerContent{
-        width: 300px;
-    }
-
-    .topItens {
-        max-width: 300px;
-    }
-
+  .topItens {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
+  .bloco1 {
+    width: 350px;
+  }
 
-    .bloco1 {
-        width: 350px;
-    }
+  .bloco2 {
+    display: none;
+  }
 
-    .bloco2 {
-        display: none;
-    }
-    
-    .topItens {
-        max-width: 350px;
-    }
+  .topItens {
+    max-width: 350px;
+  }
 
-    .marketButtonPosition {
-        width: 30%;
-        background-image: url(/assets/img/Icones/shoppingMarketBranco.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: #F18F01;
-        border-radius: 5px;
-    }
+  .marketButtonPosition {
+    width: 30%;
+    background-image: url(/assets/img/Icones/shoppingMarketBranco.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f18f01;
+    border-radius: 5px;
+  }
 
-    .marketButton {
-        width:  70px;
-        height: 70px;
-        background-color: transparent;
-        border: none;
-    }
+  .marketButton {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+  }
 
-    .price {
-        font-size: 15px;
-    }
+  .price {
+    font-size: 15px;
+  }
 
-    .marketButtonPosition p{
-        display: none;
-    }
+  .marketButtonPosition p {
+    display: none;
+  }
 
-    .pricePosition{
-        width: 70%;
-    }
+  .pricePosition {
+    width: 70%;
+  }
 
-    .containerContent{
-        width: 350px;
-    }
-
+  .containerContent {
+    width: 350px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+  .bloco1 {
+    width: 250px;
+  }
 
-    .bloco1 {
-        width: 250px;
-    }
-    
-    .topItens {
-        max-width: 250px;
-    }
+  .topItens {
+    max-width: 250px;
+  }
 
-    .containerContent{
-        width: 250px;
-    }
-
+  .containerContent {
+    width: 250px;
+  }
 }

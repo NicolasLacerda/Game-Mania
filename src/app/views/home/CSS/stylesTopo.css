@@ -148,7 +148,6 @@ body {
   background-image: url(/assets/img/Icones/Lupa/miniBuscadorCinza.png);
   background-repeat: no-repeat;
   background-position: center center;
-  transition: 0.3s;
   -webkit-font-smoothing: antialiased;
   border: solid white 1px;
   border-top-right-radius: 5px;
@@ -192,7 +191,6 @@ body {
   background-image: url(/assets/img/Icones/Bolsa/miniBolsaCinza.png);
   background-repeat: no-repeat;
   background-position: center center;
-  transition: 0.3s;
   -webkit-font-smoothing: antialiased;
   background-color: white;
   border-radius: 50%;

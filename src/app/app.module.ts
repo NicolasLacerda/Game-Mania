@@ -8,10 +8,11 @@ import { LoginComponent } from './views/login/login.component';
 import { RegisterComponent } from './views/register/register.component';
 import { HeaderComponent } from './views/header/header.component';
 import { FooterComponent } from './views/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, LoginComponent, RegisterComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -6,11 +6,6 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
-  background-color: #181818;
-  width: 100%;
-}
-
 .footer {
   height: 500px;
   padding-left: 200px;
@@ -30,11 +25,13 @@ body {
 
 .sectionMenuFooter {
   width: 20%;
+  padding-right: 10px;
 }
 
 .sectionSocialFooter {
   width: 30%;
   height: 100%;
+  margin-left: 10px;
 }
 
 .sectionSocialFooter1 {
@@ -57,10 +54,18 @@ body {
   color: black;
 }
 
+.textoEsquerdaRodape p {
+  margin: 0;
+}
+
 .textoDireitaRodape {
   width: 10%;
   height: 100%;
   color: black;
+}
+
+.textoDireitaRodape p {
+  margin: 0;
 }
 
 .pais {
@@ -87,6 +92,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  text-align: justify;
 }
 
 .l1R {

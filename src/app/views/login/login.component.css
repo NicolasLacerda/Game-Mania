@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #181920;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.loginContainerPosition {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.loginContainer {
+  width: 60%;
+  height: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.loginContainer h1 {
+  margin-bottom: 30px;
+}
+
+.inputsArea {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputsArea .inputContainer {
+  width: 100%;
+  height: 75px;
+}
+
+.inputsArea .inputContainer:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.inputsArea .inputContainer input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 20px;
+  outline: none;
+}
+
+.buttonArea {
+  width: 100%;
+  height: 100px;
+  margin-top: 40px;
+}
+
+.buttonArea .loginButton input {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0px 10px 40px -12px #000002;
+  transition: 0.3s;
+}
+
+.buttonArea .registerArea {
+  display: flex;
+  width: 100%;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.buttonArea .registerArea p {
+  color: #474747;
+}
+
+.buttonArea .registerArea a {
+  text-decoration: none;
+  color: black;
+  padding-left: 5px;
+}
+
+.buttonArea .registerArea a:hover {
+  text-decoration: underline;
+}
+
+.sliderContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: url(../Img/Icones/fundo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sliderContainer h1 {
+  color: #222;
+  width: 60%;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderContainer p {
+  color: #222;
+  width: 60%;
+  font-size: 15px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sliderContainer img {
+  width: 70%;
+  -webkit-font-smoothing: antialiased;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

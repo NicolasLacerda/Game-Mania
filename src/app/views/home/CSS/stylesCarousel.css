@@ -1,0 +1,314 @@
+.container {
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    transition: ease all .5s;
+}
+
+input{
+    display: none;
+}
+
+.slide-container {
+    height: 100%;
+    width: 500%;
+    position: relative;
+    display: flex;
+}
+
+.slide-container .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-container .slide {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+}
+
+.carouselButtons{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+    z-index: 3;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#prev {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(/assets/img/Icones/seta.png);
+    transform: rotate(180deg);
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+}
+
+#prev:hover {
+    background-image: url(/assets/img/Icones/setaLaranja.png);
+}
+
+#next {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-image: url(/assets/img/Icones/seta.png);
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+}
+
+#next:hover {
+    background-image: url(/assets/img/Icones/setaLaranja.png);
+}
+
+#radio1:checked ~ .active {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .active {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .active {
+    margin-left: -40%;
+}
+
+.carouselDots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.carouselDots .dot{
+    width: 40px;
+    height: 4px;
+    margin: 10px;
+    background-color: gainsboro;
+}
+
+.carouselDots .active{
+    background-color: #ed9121;
+    transition: 0.3s;
+}
+
+.textoCarroussel{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 35%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.textoCarroussel .bot{
+    display: block;
+    width: fit-content;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 4px;
+    color: black;
+}
+
+.textoCarroussel .bot:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+}
+
+.textoCarroussel .titulo{
+    display: block;
+    color: #FFF;
+    margin-bottom: 20px;
+    height: 55px;
+    font-size: 20px;
+    transition: ease all .5s;
+}
+
+.textoCarroussel .subTitulo{
+    height: 40px;
+    display: block;
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 4px;
+    transition: ease all .5s;
+}
+
+.imageDesktop{
+    display: flex;
+}
+
+.imageMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1680px) {
+    .container {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .textoCarroussel{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .textoCarroussel{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .textoCarroussel{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .textoCarroussel .titulo{
+        font-size: 18px;
+    }
+    
+    .textoCarroussel .subTitulo{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .textoCarroussel .titulo{
+        font-size: 16px;
+    }
+    
+    .textoCarroussel .subTitulo{
+        font-size: 13px;
+    }
+
+    .textoCarroussel .bot{
+        width: fit-content;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+    .textoCarroussel .titulo{
+        font-size: 14px;
+    }
+    
+    .textoCarroussel .subTitulo{
+        font-size: 11px;
+    }
+
+    .textoCarroussel .bot{
+        width: fit-content;
+        height: 45px;
+    }
+
+    .imageDesktop{
+        display: none;
+    }
+    
+    .imageMobile{
+        display: flex;
+    }
+
+    .slide-container .slide img {
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .textoCarroussel .titulo{
+        font-size: 12px;
+    }
+    
+    .textoCarroussel .subTitulo{
+        display: none;
+    }
+
+    .textoCarroussel .bot{
+        width: fit-content;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .textoCarroussel .titulo{
+        font-size: 11px;
+    }
+    
+    .textoCarroussel .subTitulo{
+        display: none;
+    }
+
+    .textoCarroussel .bot{
+        width: fit-content;
+        height: 45px;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+    .textoCarroussel .titulo{
+        font-size: 10px;
+    }
+
+    .textoCarroussel .subTitulo{
+        display: none;
+    }
+
+    .textoCarroussel .bot{
+        width: fit-content;
+        height: 45px;
+    }
+
+}

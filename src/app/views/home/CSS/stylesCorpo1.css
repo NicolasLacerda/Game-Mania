@@ -1,0 +1,98 @@
+.margem {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 0.1px;
+    padding-top: 30px;
+    background-color: #EBEBEB;
+    transition: ease all .5s;
+    height: fit-content;
+}
+
+.tituloAnuncios {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.tituloAnuncios h2{
+    font-size: 25px;
+    justify-content: flex-start;
+    width: calc(100% - 90px);
+    display: flex;
+    color: black;
+    margin-left: 10px;
+}
+
+.blockTitle {
+    width: 70px;
+    height: 70px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.blockInter {
+    width: 60px;
+    height: 60px;
+    background-color: #F18F01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.blockInter img{
+    height: 40px;
+    display: block;
+}
+
+@media only screen and (max-width: 1680px) {
+    .margem {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .margem {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .margem {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .tituloAnuncios h2{
+        font-size: 20px;
+    } 
+}
+
+@media only screen and (max-width: 1024px) {
+    .margem {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tituloAnuncios h2{
+        font-size: 15px;
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    .margem {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

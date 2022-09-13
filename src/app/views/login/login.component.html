@@ -8,24 +8,27 @@
           <div class="inputContainer">
             <label for="email">Email</label>
             <input
+              [(ngModel)]="usuario.email"
               type="email"
               placeholder="fulano@gmail.com"
               name="email"
-              id=""
             />
           </div>
 
           <div class="inputContainer">
             <label for="senha">Senha</label>
-            <input type="password" placeholder="Senha" name="senha" id="" />
+            <input
+              [(ngModel)]="usuario.senha"
+              type="password"
+              placeholder="Senha"
+              name="senha"
+            />
           </div>
         </div>
 
         <div class="buttonArea">
           <div class="loginButton">
-            <a routerLink="/">
-              <input type="button" value="Entrar" />
-            </a>
+            <input type="submit" value="Entrar" (click)="fazerLogin()" />
           </div>
 
           <div class="registerArea">

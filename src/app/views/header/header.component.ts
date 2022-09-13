@@ -1,3 +1,4 @@
+import { AuthService } from 'src/app/views/login/auth.service';
 import { Component, OnInit } from '@angular/core';
 import scriptTopo from './scriptTopo';
 import * as $ from 'jquery';
@@ -8,9 +9,15 @@ import * as $ from 'jquery';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  constructor() {}
+  mostrarMenu: boolean = false;
 
-  ngOnInit(): void {
+  constructor(private authService: AuthService) {}
+
+  ngOnInit() {
     scriptTopo();
+
+    this.authService.mostrarMenuEmitter.subscribe(
+      (mostrar) => (this.mostrarMenu = mostrar)
+    );
   }
 }

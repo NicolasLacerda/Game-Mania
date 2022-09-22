@@ -22,5 +22,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     scriptCarousel();
     scriptVitrine();
+    $('#icon1').css('display', 'flex');
+    $('.textMenu').css('display', 'flex');
+    $('.caixaDePesquisaPosition').css('display', 'flex');
   }
 }

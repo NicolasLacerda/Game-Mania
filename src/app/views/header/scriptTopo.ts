@@ -6,7 +6,7 @@ const scriptTopo = () => {
   });
 
   $('#icon1').click(function () {
-    $('.loginPosition').animate({ width: 'hide' }, 300);
+    $('.loginPosition').animate({ width: 'hide' }, 1);
   });
 
   $('#exitCarrinho').click(function () {

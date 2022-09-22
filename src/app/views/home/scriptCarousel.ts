@@ -11,8 +11,6 @@ const scriptCarousel = () => {
   let i = 0;
 
   $(document).ready(function () {
-    console.log('dasdasd');
-
     //botão next
     $('#next').click(function () {
       dots.forEach((dot) => {

@@ -3,29 +3,40 @@
     <div class="loginContainerPosition">
       <div class="loginContainer">
         <h1>Bem-Vindo</h1>
+        <form (ngSubmit)="receberDados()">
+          <div class="inputsArea">
+            <div class="inputContainer">
+              <label for="email">Email</label>
+              <input
+                [(ngModel)]="userModel.email"
+                type="email"
+                name="email"
+                id="email"
+              />
+            </div>
 
-        <div class="inputsArea">
-          <div class="inputContainer">
-            <label for="email">Email</label>
-            <input type="email" name="email" />
+            <div class="inputContainer">
+              <label for="senha">Senha</label>
+              <input
+                [(ngModel)]="userModel.password"
+                type="password"
+                name="senha"
+                id="senha"
+              />
+            </div>
           </div>
 
-          <div class="inputContainer">
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" />
-          </div>
-        </div>
+          <div class="buttonArea">
+            <div class="loginButton">
+              <input type="submit" value="Entrar" />
+            </div>
 
-        <div class="buttonArea">
-          <div class="loginButton">
-            <input type="submit" value="Entrar" />
+            <div class="registerArea">
+              <p>Ainda não conta?</p>
+              <a routerLink="/register">criar conta</a>
+            </div>
           </div>
-
-          <div class="registerArea">
-            <p>Ainda não conta?</p>
-            <a routerLink="/register">criar conta</a>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
 

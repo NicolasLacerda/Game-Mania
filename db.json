@@ -2,7 +2,13 @@
   "users": [
     {
       "email": "olivier@mail.com",
-      "password": "bestPassw0rd"
+      "password": "$2a$10$.oqYYH6DqJFGnJ.2UZLKNu8e6TJjhcvLu4dvJo5WiAVu2FSWtPkUu",
+      "id": 1
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$8T8KCEfHpaSO1U54fluRUuUI.u2u8k2jc0MOPSJZ78uM2lTJz5Gz.",
+      "id": 2
     }
   ]
 }

@@ -9,7 +9,6 @@ import { RegisterComponent } from './views/register/register.component';
 import { HeaderComponent } from './views/header/header.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AuthService } from './views/login/auth.service';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -27,7 +26,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     FormsModule,
   ],
-  providers: [AuthService],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -7,28 +7,18 @@
         <div class="inputsArea">
           <div class="inputContainer">
             <label for="email">Email</label>
-            <input
-              [(ngModel)]="usuario.email"
-              type="email"
-              placeholder="fulano@gmail.com"
-              name="email"
-            />
+            <input type="email" name="email" />
           </div>
 
           <div class="inputContainer">
             <label for="senha">Senha</label>
-            <input
-              [(ngModel)]="usuario.senha"
-              type="password"
-              placeholder="Senha"
-              name="senha"
-            />
+            <input type="password" name="senha" />
           </div>
         </div>
 
         <div class="buttonArea">
           <div class="loginButton">
-            <input type="submit" value="Entrar" (click)="fazerLogin()" />
+            <input type="submit" value="Entrar" />
           </div>
 
           <div class="registerArea">

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import scriptCarousel from './scriptCarousel';
-import scriptVitrine from './scriptVitrine';
+import scriptCarousel from 'src/assets/ts/scriptCarousel';
+import scriptVitrine from 'src/assets/ts/scriptVitrine';
 import * as $ from 'jquery';
 
 @Component({

@@ -232,6 +232,11 @@
   align-items: center;
   justify-content: center;
   border: 1px solid white;
+  font-size: 15px;
+}
+
+.marketButton p {
+  font-size: 14.5px;
 }
 
 .marketButtonPosition a {

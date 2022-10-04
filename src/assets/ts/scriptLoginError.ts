@@ -1,6 +1,6 @@
 import * as $ from 'jquery';
 
-const scriptLogin = () => {
+const scriptLoginError = () => {
   $('.inputContainer').css('color', 'red');
   $('#email').css('border-bottom', '1px solid red');
   $('#email').attr('placeholder', 'Email Inválido');
@@ -9,4 +9,4 @@ const scriptLogin = () => {
   $('.imagePosition').addClass('active');
 };
 
-export default scriptLogin;
+export default scriptLoginError;

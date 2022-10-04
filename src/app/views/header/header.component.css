@@ -64,6 +64,32 @@
   color: #181818;
 }
 
+.loggedPosition {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9;
+  margin-top: 5px;
+}
+
+.loggedPosition .logged {
+  display: none;
+}
+
+.loggedPosition .active {
+  width: 215px;
+  height: 30px;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+}
+
 .logoPosition {
   height: 100%;
   width: 160.25px;
@@ -420,11 +446,11 @@
   }
 
   .caixaDePesquisaPosition {
-    display: none;
+    display: none !important;
   }
 
   .caixaDePesquisa {
-    display: none;
+    display: none !important;
   }
 
   .logoPosition {
@@ -450,7 +476,7 @@
   }
 
   .textMenu {
-    display: none;
+    display: none !important;
   }
 
   .loginPosition {

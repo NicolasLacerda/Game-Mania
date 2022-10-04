@@ -7,22 +7,34 @@
           <div class="inputsArea">
             <div class="inputContainer">
               <label for="email">Email</label>
-              <input
-                [(ngModel)]="requestLogin.email"
-                type="email"
-                name="email"
-                id="email"
-              />
+              <div class="area">
+                <input
+                  [(ngModel)]="requestLogin.email"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=""
+                />
+                <div class="imagePosition">
+                  <img src="assets/img/Icones/caution.png" />
+                </div>
+              </div>
             </div>
 
             <div class="inputContainer">
               <label for="senha">Senha</label>
-              <input
-                [(ngModel)]="requestLogin.password"
-                type="password"
-                name="senha"
-                id="senha"
-              />
+              <div class="area">
+                <input
+                  [(ngModel)]="requestLogin.password"
+                  type="password"
+                  name="senha"
+                  id="senha"
+                  placeholder=""
+                />
+                <div class="imagePosition">
+                  <img src="assets/img/Icones/caution.png" />
+                </div>
+              </div>
             </div>
           </div>
 

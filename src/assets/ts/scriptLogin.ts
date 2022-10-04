@@ -1,12 +1,12 @@
 import * as $ from 'jquery';
 
 const scriptLogin = () => {
-  let inputColorChanger = document.querySelectorAll('.inputContainer');
   $('.inputContainer').css('color', 'red');
-  $('#email').css('color', 'red');
   $('#email').css('border-bottom', '1px solid red');
-  $('#senha').css('color', 'red');
+  $('#email').attr('placeholder', 'Email Inválido');
   $('#senha').css('border-bottom', '1px solid red');
+  $('#senha').attr('placeholder', 'Senha Inválida');
+  $('.imagePosition').addClass('active');
 };
 
 export default scriptLogin;

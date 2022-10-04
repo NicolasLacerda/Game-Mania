@@ -3,12 +3,12 @@
     <div class="loginContainerPosition">
       <div class="loginContainer">
         <h1>Bem-Vindo</h1>
-        <form (ngSubmit)="receberDados()">
+        <form>
           <div class="inputsArea">
             <div class="inputContainer">
               <label for="email">Email</label>
               <input
-                [(ngModel)]="userModel.email"
+                [(ngModel)]="requestLogin.email"
                 type="email"
                 name="email"
                 id="email"
@@ -18,7 +18,7 @@
             <div class="inputContainer">
               <label for="senha">Senha</label>
               <input
-                [(ngModel)]="userModel.password"
+                [(ngModel)]="requestLogin.password"
                 type="password"
                 name="senha"
                 id="senha"
@@ -28,7 +28,7 @@
 
           <div class="buttonArea">
             <div class="loginButton">
-              <input type="submit" value="Entrar" />
+              <input (click)="doLogin()" type="submit" value="Entrar" />
             </div>
 
             <div class="registerArea">

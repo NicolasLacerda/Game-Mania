@@ -9,6 +9,11 @@
       "email": "test@mail.com",
       "password": "$2a$10$8T8KCEfHpaSO1U54fluRUuUI.u2u8k2jc0MOPSJZ78uM2lTJz5Gz.",
       "id": 2
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$RSLrCs.oCYxfC0YgFcq4pO1f1UYP0x3aaTOa9fuY5.v06eBd/VUza",
+      "id": 3
     }
   ]
 }

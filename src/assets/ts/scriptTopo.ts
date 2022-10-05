@@ -6,7 +6,7 @@ const scriptTopo = () => {
   });
 
   $('#icon1').click(function () {
-    $('.loginPosition').animate({ width: 'hide' }, 1);
+    $('.loginPositionNotLogged').animate({ width: 'hide' }, 1);
   });
 
   $('#exitCarrinho').click(function () {
@@ -14,11 +14,11 @@ const scriptTopo = () => {
   });
 
   $('.loginBot').click(function () {
-    $('.loginPosition').animate({ height: 'toggle' }, 300);
+    $('.loginPositionNotLogged').animate({ height: 'toggle' }, 300);
   });
 
   $('#icon2').click(function () {
-    $('.loginPosition').animate({ height: 'toggle' }, 300);
+    $('.loginPositionNotLogged').animate({ height: 'toggle' }, 300);
   });
 
   $('#icon2').click(function () {
@@ -26,7 +26,7 @@ const scriptTopo = () => {
   });
 
   $('.menu').click(function () {
-    $('.loginPosition').animate({ height: 'toggle' }, 300);
+    $('.loginPositionNotLogged').animate({ height: 'toggle' }, 300);
   });
 
   $('.caixaDePesquisa').click(function () {

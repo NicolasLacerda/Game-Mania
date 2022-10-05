@@ -336,7 +336,7 @@
   justify-content: center;
 }
 
-.loginPosition {
+.loginPositionNotLogged {
   height: 125px;
   width: fit-content;
   margin-top: -15px;
@@ -347,7 +347,7 @@
   display: none;
 }
 
-.loginPosition #loginBar {
+.loginPositionNotLogged #loginBarNotLogged {
   background-color: white;
   display: flex;
   align-items: center;
@@ -359,7 +359,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-#loginBar .loginBot {
+#loginBarNotLogged .loginBot {
   width: 100%;
   height: 100%;
   display: flex;
@@ -370,7 +370,7 @@
   border-radius: 5px;
 }
 
-#loginBar a {
+#loginBarNotLogged a {
   width: 100%;
   height: 50%;
   display: flex;
@@ -381,11 +381,11 @@
   border-radius: 5px;
 }
 
-#loginBar a:hover {
+#loginBarNotLogged a:hover {
   background-color: #cccccc;
 }
 
-#loginBar p {
+#loginBarNotLogged p {
   width: 100%;
   height: 50%;
   display: flex;
@@ -394,6 +394,100 @@
   color: black;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.loginPositionLogged {
+  height: 525px;
+  width: fit-content;
+  margin-top: -15px;
+  padding-right: calc(200px - 130px);
+  right: 0;
+  position: absolute;
+  z-index: 4;
+  display: none;
+}
+
+.loginPositionLogged #loginBarLogged {
+  background-color: white;
+  width: 300px;
+  height: 100%;
+  flex-direction: column;
+  border-radius: 5px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.perfilImgPosition {
+  width: 100%;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px #b4b4b4;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.perfilImgPosition .perfilImg {
+  width: 125px;
+  height: 125px;
+  cursor: pointer;
+}
+
+.perfilImgPosition .perfilImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+  border: solid 2px #ed9121;
+}
+
+.perfilImgPosition p {
+  padding: 10px;
+  color: gray;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 330px;
+  cursor: pointer;
+}
+
+.options .links {
+  width: 100%;
+  height: 55px;
+}
+
+.options .links a {
+  width: 100%;
+  height: 55px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  color: gray;
+  padding: 10px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.options .links a p {
+  padding-left: 10px;
+}
+
+.options .links:hover {
+  background-color: #d6d6d6;
+}
+
+.options .links:not(:last-child) {
+  border-bottom: #b4b4b4 solid 1px;
+}
+
+.options .links:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 @media only screen and (max-width: 1680px) {
@@ -407,8 +501,12 @@
     padding-right: 150px;
   }
 
-  .loginPosition {
+  .loginPositionNotLogged {
     padding-right: calc(150px - 80px);
+  }
+
+  .loginPositionLogged {
+    padding-right: calc(150px - 130px);
   }
 }
 
@@ -423,8 +521,12 @@
     padding-right: 100px;
   }
 
-  .loginPosition {
+  .loginPositionNotLogged {
     padding-right: calc(100px - 80px);
+  }
+
+  .loginPositionLogged {
+    padding-right: calc(100px - 130px);
   }
 }
 
@@ -439,7 +541,11 @@
     padding-right: 50px;
   }
 
-  .loginPosition {
+  .loginPositionNotLogged {
+    padding-right: 0px;
+  }
+
+  .loginPositionLogged {
     padding-right: 0px;
   }
 }
@@ -491,7 +597,11 @@
     padding-right: 0px;
   }
 
-  .loginPosition {
+  .loginPositionNotLogged {
+    left: 0;
+  }
+
+  .loginPositionLogged {
     left: 0;
   }
 }
@@ -505,7 +615,11 @@
     display: none !important;
   }
 
-  .loginPosition {
+  .loginPositionNotLogged {
+    margin-top: 0px;
+  }
+
+  .loginPositionLogged {
     margin-top: 0px;
   }
 

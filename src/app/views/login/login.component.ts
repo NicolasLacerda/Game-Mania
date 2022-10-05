@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { RequestLogin } from 'src/app/models/requestLogin';
 import { LoginService } from 'src/app/services/login.service';
 import * as $ from 'jquery';
+import scriptHeaderLogged from 'src/assets/ts/scriptHeaderLogged';
+import scriptHeaderNotLogged from 'src/assets/ts/scriptHeaderNotLogged';
 
 @Component({
   selector: 'app-login',
@@ -28,6 +30,7 @@ export class LoginComponent implements OnInit {
         setTimeout(function () {
           $('.logged').animate({ opacity: 'hide' }, 300);
         }, 2000);
+        scriptHeaderLogged();
         this.router.navigate(['']);
         console.log(data);
       },

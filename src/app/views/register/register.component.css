@@ -26,7 +26,7 @@ body {
   box-shadow: 0px 5px 5px 1px rgb(0 0 0 / 20%);
 }
 
-.loginContainerPosition {
+.registerContainerPosition {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@ body {
   border-bottom-left-radius: 10px;
 }
 
-.loginContainerPosition .loginArea {
+.registerContainerPosition .registerArea {
   width: 80%;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@ body {
   border-bottom-left-radius: 10px;
 }
 
-.loginContainer {
+.registerContainer {
   width: 50%;
   height: 500px;
   border-radius: 5px;
@@ -57,11 +57,11 @@ body {
   align-items: center;
 }
 
-.loginContainer:not(:last-child) {
+.registerContainer:not(:last-child) {
   margin-right: 30px;
 }
 
-.loginContainer h1 {
+.registerContainer h1 {
   margin-bottom: 30px;
 }
 
@@ -95,13 +95,56 @@ body {
   outline: none;
 }
 
+.inputsArea .inputContainerEmail {
+  width: 100%;
+  height: 75px;
+}
+
+.inputsArea .inputContainerEmail:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.inputsArea .inputContainerEmail input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 1px solid gray;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 20px;
+  outline: none;
+}
+
+.inputsArea .inputContainerEmail .area {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+}
+
+.inputContainerEmail .area .imagePositionEmail {
+  display: none;
+}
+
+.inputContainerEmail .area .active {
+  border-bottom: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.inputContainerEmail .area .imagePositionEmail img {
+  width: 28px;
+  height: 26px;
+}
+
 .buttonArea {
   width: 80%;
   height: 100px;
   margin-top: 40px;
 }
 
-.buttonArea .loginButton input {
+.buttonArea .registerButton input {
   width: 100%;
   height: 50px;
   cursor: pointer;

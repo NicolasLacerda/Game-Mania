@@ -1,48 +1,89 @@
 <body>
   <div class="container">
-    <div class="loginContainerPosition">
+    <div class="registerContainerPosition">
       <h1>Bem-Vindo</h1>
 
-      <div class="loginArea">
-        <div class="loginContainer">
+      <div class="registerArea">
+        <div class="registerContainer">
           <div class="inputsArea">
             <div class="inputContainer">
               <label for="senha">Nome</label>
-              <input type="text" placeholder="Nome" name="" />
+              <input
+                [(ngModel)]="requestRegister.firstname"
+                type="text"
+                placeholder="Nome"
+                name=""
+              />
             </div>
 
             <div class="inputContainer">
               <label for="senha">Sobrenome</label>
-              <input type="text" placeholder="Sobrenome" name="" />
+              <input
+                [(ngModel)]="requestRegister.lastname"
+                type="text"
+                placeholder="Sobrenome"
+                name=""
+              />
             </div>
 
-            <div class="inputContainer">
-              <label for="senha">Email</label>
-              <input type="email" placeholder="user@email.com" name="" />
+            <div class="inputContainerEmail">
+              <label for="email">Email</label>
+              <div class="area">
+                <input
+                  [(ngModel)]="requestRegister.email"
+                  type="email"
+                  name="email"
+                  class="emailRegister"
+                  placeholder="user@email.com"
+                />
+                <div class="imagePositionEmail">
+                  <img src="assets/img/Icones/caution.png" />
+                </div>
+              </div>
             </div>
 
-            <div class="inputContainer">
-              <label for="senha">Confirme seu Email</label>
-              <input type="email" placeholder="user@email.com" name="" />
+            <div class="inputContainerEmail">
+              <label for="email">Confirme seu Email</label>
+              <div class="area">
+                <input
+                  type="email"
+                  name="emailConfirm"
+                  class="emailRegister"
+                  placeholder="user@email.com"
+                />
+                <div class="imagePositionEmail">
+                  <img src="assets/img/Icones/caution.png" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="loginContainer">
+        <div class="registerContainer">
           <div class="inputsArea">
             <div class="inputContainer">
               <label for="senha">Telefone</label>
-              <input type="text" placeholder="(00) 00000-0000" name="" />
+              <input
+                [(ngModel)]="requestRegister.phone"
+                type="text"
+                placeholder="(00) 00000-0000"
+                name=""
+              />
             </div>
 
             <div class="inputContainer">
               <label for="senha">Data de Nascimento</label>
-              <input type="date" name="" />
+              <input [(ngModel)]="requestRegister.age" type="date" name="" />
             </div>
 
             <div class="inputContainer">
               <label for="senha">Senha</label>
-              <input type="password" placeholder="password" name="" />
+              <input
+                [(ngModel)]="requestRegister.password"
+                type="password"
+                placeholder="password"
+                name=""
+              />
             </div>
 
             <div class="inputContainer">
@@ -54,13 +95,13 @@
       </div>
 
       <div class="buttonArea">
-        <div class="loginButton">
-          <input type="button" value="Registrar" />
+        <div class="registerButton">
+          <input (click)="doRegister()" type="button" value="Registrar" />
         </div>
 
         <div class="registerArea">
           <p>Já possui conta?</p>
-          <a routerLink="/login">Entrar</a>
+          <a routerLink="/register">Entrar</a>
         </div>
       </div>
     </div>

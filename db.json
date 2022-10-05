@@ -14,6 +14,33 @@
       "email": "admin@admin.com",
       "password": "$2a$10$RSLrCs.oCYxfC0YgFcq4pO1f1UYP0x3aaTOa9fuY5.v06eBd/VUza",
       "id": 3
+    },
+    {
+      "email": "test.test@email.com",
+      "password": "$2a$10$YnN.38CVNlTli/G4xzCyG.ImK7fD.q4Va5zCkNm4DHS9lSNae8q1m",
+      "phone": "31 983273213",
+      "firstname": "Teste",
+      "lastname": "Teste",
+      "age": "2022-10-13",
+      "id": 4
+    },
+    {
+      "email": "test2@test.com",
+      "password": "$2a$10$tLc2Un2S7U0JkbWhrC1dhuENkdU1eYjLXuyUn8IAmB88uDXEN6spa",
+      "firstname": "test2",
+      "lastname": "test2",
+      "phone": "314124412",
+      "age": "0001-03-31",
+      "id": 5
+    },
+    {
+      "email": "test3@email.com",
+      "password": "$2a$10$bw.3UrmmIZqXkDDGBsQa/ejNlZ6ksn0ndDyL2t7A/.ntoIHt4Nw5S",
+      "firstname": "test3",
+      "lastname": "test3",
+      "phone": "3133113131",
+      "age": "0001-03-31",
+      "id": 6
     }
   ]
 }

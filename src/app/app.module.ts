@@ -11,6 +11,9 @@ import { FooterComponent } from './views/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

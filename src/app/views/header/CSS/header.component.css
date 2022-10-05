@@ -265,231 +265,6 @@
   background-image: url(/assets/img/Icones/Perfil/miniPerfilPreto.png);
 }
 
-.carrinhoPosition {
-  height: calc(100vh - 20px);
-  width: fit-content;
-  margin-top: -80px;
-  margin-right: 10px;
-  right: 0;
-  position: absolute;
-  z-index: 4;
-}
-
-#carrinho {
-  background-color: white;
-  width: 300px;
-  height: 100%;
-  flex-direction: column;
-  border-radius: 5px;
-  -webkit-font-smoothing: antialiased;
-}
-
-#exitCarrinho {
-  width: 100%;
-  height: 45px;
-  padding: 10px;
-}
-
-#exitCarrinho img {
-  height: 25px;
-  width: 25px;
-  cursor: pointer;
-  -webkit-font-smoothing: antialiased;
-}
-
-.itensComprados {
-  width: 100%;
-  height: calc(100% - 45px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.emptyBagPosition {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.emptyBag {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.emptyBag img {
-  -webkit-font-smoothing: antialiased;
-  width: 115px;
-  height: 160px;
-}
-
-.emptyBagPosition p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loginPositionNotLogged {
-  height: 125px;
-  width: fit-content;
-  margin-top: -15px;
-  padding-right: calc(200px - 80px);
-  right: 0;
-  position: absolute;
-  z-index: 4;
-  display: none;
-}
-
-.loginPositionNotLogged #loginBarNotLogged {
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 100%;
-  flex-direction: column;
-  border-radius: 5px;
-  -webkit-font-smoothing: antialiased;
-}
-
-#loginBarNotLogged .loginBot {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-}
-
-#loginBarNotLogged a {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-}
-
-#loginBarNotLogged a:hover {
-  background-color: #cccccc;
-}
-
-#loginBarNotLogged p {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.loginPositionLogged {
-  height: 525px;
-  width: fit-content;
-  margin-top: -15px;
-  padding-right: calc(200px - 130px);
-  right: 0;
-  position: absolute;
-  z-index: 4;
-  display: none;
-}
-
-.loginPositionLogged #loginBarLogged {
-  background-color: white;
-  width: 300px;
-  height: 100%;
-  flex-direction: column;
-  border-radius: 5px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.perfilImgPosition {
-  width: 100%;
-  height: 195px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: solid 1px #b4b4b4;
-  flex-direction: column;
-  padding-top: 10px;
-}
-
-.perfilImgPosition .perfilImg {
-  width: 125px;
-  height: 125px;
-  cursor: pointer;
-}
-
-.perfilImgPosition .perfilImg img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  border-radius: 50%;
-  border: solid 2px #ed9121;
-}
-
-.perfilImgPosition p {
-  padding: 10px;
-  color: gray;
-}
-
-.options {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-  height: 330px;
-  cursor: pointer;
-}
-
-.options .links {
-  width: 100%;
-  height: 55px;
-}
-
-.options .links a {
-  width: 100%;
-  height: 55px;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  color: gray;
-  padding: 10px;
-  text-decoration: none;
-  padding-left: 10px;
-}
-
-.options .links a p {
-  padding-left: 10px;
-}
-
-.options .links:hover {
-  background-color: #d6d6d6;
-}
-
-.options .links:not(:last-child) {
-  border-bottom: #b4b4b4 solid 1px;
-}
-
-.options .links:last-child {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
 @media only screen and (max-width: 1680px) {
   #navBar {
     padding-left: 150px;
@@ -499,14 +274,6 @@
   .textMenu {
     padding-left: 150px;
     padding-right: 150px;
-  }
-
-  .loginPositionNotLogged {
-    padding-right: calc(150px - 80px);
-  }
-
-  .loginPositionLogged {
-    padding-right: calc(150px - 130px);
   }
 }
 
@@ -520,14 +287,6 @@
     padding-left: 100px;
     padding-right: 100px;
   }
-
-  .loginPositionNotLogged {
-    padding-right: calc(100px - 80px);
-  }
-
-  .loginPositionLogged {
-    padding-right: calc(100px - 130px);
-  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -539,14 +298,6 @@
   .textMenu {
     padding-left: 50px;
     padding-right: 50px;
-  }
-
-  .loginPositionNotLogged {
-    padding-right: 0px;
-  }
-
-  .loginPositionLogged {
-    padding-right: 0px;
   }
 }
 
@@ -569,40 +320,9 @@
     display: none;
   }
 
-  .menuPosition {
-    width: 40px;
-    display: flex;
-    height: 100%;
-    margin-left: 24px;
-    align-items: center;
-  }
-
-  .caixaDePesquisaPosition {
-    display: none !important;
-  }
-
-  .caixaDePesquisa {
-    display: none !important;
-  }
-
-  .logoPosition {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .textMenu {
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .loginPositionNotLogged {
-    left: 0;
-  }
-
-  .loginPositionLogged {
-    left: 0;
   }
 }
 
@@ -613,22 +333,5 @@
 
   .textMenu {
     display: none !important;
-  }
-
-  .loginPositionNotLogged {
-    margin-top: 0px;
-  }
-
-  .loginPositionLogged {
-    margin-top: 0px;
-  }
-
-  .carrinhoPosition {
-    margin-top: -50px;
-    margin-left: 10px;
-  }
-
-  #carrinho {
-    width: calc(100vw - 20px);
   }
 }

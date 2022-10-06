@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import scriptCarousel from 'src/assets/ts/scriptCarousel';
 import scriptVitrine from 'src/assets/ts/scriptVitrine';
+import { Product } from 'src/app/models/product';
+import { ProductService } from 'src/app/services/product.service';
 import * as $ from 'jquery';
 
 @Component({
@@ -17,7 +19,9 @@ import * as $ from 'jquery';
   ],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  productList: Product[] = [];
+
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
     scriptCarousel();
@@ -25,5 +29,6 @@ export class HomeComponent implements OnInit {
     $('#icon1').css('display', 'flex');
     $('.textMenu').css('display', 'flex');
     $('.caixaDePesquisaPosition').css('display', 'flex');
+    this.productList = this.productService.getProducts();
   }
 }

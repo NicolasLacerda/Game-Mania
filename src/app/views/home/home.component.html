@@ -1,5 +1,5 @@
 <body>
-  <div class="container">
+  <div class="slider">
     <div class="slide-container">
       <input class="btnSlider" type="radio" name="radio-btn" id="radio1" />
       <input class="btnSlider" type="radio" name="radio-btn" id="radio2" />
@@ -13,7 +13,7 @@
           alt=""
         />
 
-        <div class="textoCarroussel">
+        <div class="carouselText">
           <div class="titulo">
             <h1>O notebook gamer supremo</h1>
           </div>
@@ -35,7 +35,7 @@
           alt=""
         />
 
-        <div class="textoCarroussel">
+        <div class="carouselText">
           <div class="titulo">
             <h1>Não Importa o time</h1>
           </div>
@@ -54,7 +54,7 @@
           alt=""
         />
 
-        <div class="textoCarroussel">
+        <div class="carouselText">
           <div class="titulo">
             <font color="#000"><h1>Gamers Club</h1></font>
           </div>
@@ -112,7 +112,7 @@
       <div class="bar1"></div>
 
       <div class="carouselPosition">
-        <div class="carousel">
+        <div class="carousel" *ngFor="let product of productList">
           <div class="fileira1">
             <div class="blockPosition">
               <div class="bloco1">

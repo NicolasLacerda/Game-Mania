@@ -9,7 +9,7 @@ const scriptTopo = () => {
     $('.loginPositionNotLogged').animate({ width: 'hide' }, 1);
   });
 
-  $('#exitCarrinho').click(function () {
+  $('.close').click(function () {
     $('.carrinhoPosition').animate({ width: 'hide' }, 300);
   });
 

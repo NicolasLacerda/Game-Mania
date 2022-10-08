@@ -99,6 +99,61 @@
       "discount": "15",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHJ5T.Processador.png",
       "imageSize": "imgPequena"
+    },
+    {
+      "id": 6,
+      "name": "Notebook Asus AMD Ryzen 5-3500U, 8GB RAM, SSD 256GB, 15,6', Radeon Vega 8, Windows 11 Home, Cinza",
+      "cutprice": "4.678,94",
+      "price": "2.729,99",
+      "installmentMultiplier": "10",
+      "installmentValue": "287,36",
+      "discount": "5",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHKE1.Lenovo.png",
+      "imageSize": "imgMedia"
+    },
+    {
+      "id": 7,
+      "name": "Placa de Vídeo ZOTAC GAMING GeForce RTX 3060 Twin Edge - 15 Gbps, 12GB, GDDR6, Ray Tracing",
+      "cutprice": "3.764,69",
+      "price": "2.799,99",
+      "installmentMultiplier": "10",
+      "installmentValue": "280,00",
+      "discount": "12",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHeEx.zotac3060.png",
+      "imageSize": "imgMedia"
+    },
+    {
+      "id": 8,
+      "name": "Mouse Gamer Razer Viper Mini, Chroma, Optical Switch, 6 Botões, 8500DPI",
+      "cutprice": "470,47",
+      "price": "199,99",
+      "installmentMultiplier": "9",
+      "installmentValue": "26,14",
+      "discount": "15",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHvr0.Mouse2.png",
+      "imageSize": "imgMedia"
+    },
+    {
+      "id": 9,
+      "name": "Microfone Gamer HyperX QuadCast S, Antivibração, LED RGB, USB, Compatível com PC, PS4 e Mac",
+      "cutprice": "1.777,67",
+      "price": "999,99",
+      "installmentMultiplier": "10",
+      "installmentValue": "111,10",
+      "discount": "37",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHVvf.Microfone.png",
+      "imageSize": "imgPequena"
+    },
+    {
+      "id": 10,
+      "name": "Teclado Gamer Corsair K55 PRO XT RGB, Anti-Ghosting, US, Preto",
+      "cutprice": "729,29",
+      "price": "429,99",
+      "installmentMultiplier": "10",
+      "installmentValue": "50,58",
+      "discount": "15",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHBML.Teclado2.png",
+      "imageSize": "imgPequena"
     }
   ],
 

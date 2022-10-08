@@ -17,7 +17,7 @@
 
   <div class="containerContent">
     <div class="productName">
-      <p>{{ productItem.name }}</p>
+      <p>{{ productItem.name | slice: 0:65 }}...</p>
     </div>
 
     <div class="bottomContent">
@@ -28,9 +28,6 @@
 
         <div class="price">
           <p>R$ {{ productItem.price }}</p>
-          <div class="blocoPix">
-            <p>-{{ productItem.discount }}%</p>
-          </div>
         </div>
 
         <div class="priceText">
@@ -38,6 +35,10 @@
             {{ productItem.installmentMultiplier }}x de R$
             {{ productItem.installmentValue }} sem juros
           </p>
+        </div>
+
+        <div class="blocoPix">
+          <p>-{{ productItem.discount }}%</p>
         </div>
       </div>
 

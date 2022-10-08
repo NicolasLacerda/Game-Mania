@@ -290,6 +290,85 @@ _ngcontent-qhh-c55 {
   color: white;
 }
 
+.fileira1 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira2 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira3 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira4 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira5 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira6 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira7 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira8 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira9 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fileira10 {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
 @media only screen and (max-width: 1880px) {
   .bloco1 {
     margin-right: 15px;

@@ -47,7 +47,7 @@
   width: 350px;
   height: 420px;
   border-radius: 5px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .squareBanner img {

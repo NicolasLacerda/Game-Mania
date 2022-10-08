@@ -1,12 +1,6 @@
 import * as $ from 'jquery';
 
 const scriptVitrine = () => {
-  let coracaoVazio = document.querySelectorAll('.coracao');
-
-  $(coracaoVazio).click(function () {
-    $(this).toggleClass('active');
-  });
-
   //
   $('.bar1').click(function () {
     $('.fileira1').css('margin-left', '0');

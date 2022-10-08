@@ -8,48 +8,42 @@ import { MessengerService } from 'src/app/services/messenger.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
-  cartItems = [
-    // {
-    //   id: 1,
-    //   imageUrl:
-    //     'https://www.ludeka.com.br/image/cache/data/componentes/D-06/d6-26mm-branco-800x800.jpg',
-    //   productName: 1,
-    //   qty: 4,
-    //   price: 100,
-    // },
-    // {
-    //   id: 2,
-    //   imageUrl:
-    //     'https://www.ludeka.com.br/image/cache/data/componentes/D-06/d6-26mm-branco-800x800.jpg',
-    //   productName: 2,
-    //   qty: 4,
-    //   price: 50,
-    // },
-    // {
-    //   id: 3,
-    //   imageUrl:
-    //     'https://www.ludeka.com.br/image/cache/data/componentes/D-06/d6-26mm-branco-800x800.jpg',
-    //   productName: 3,
-    //   qty: 4,
-    //   price: 150,
-    // },
-    // {
-    //   id: 4,
-    //   imageUrl:
-    //     'https://www.ludeka.com.br/image/cache/data/componentes/D-06/d6-26mm-branco-800x800.jpg',
-    //   productName: 4,
-    //   qty: 4,
-    //   price: 100,
-    // },
-  ];
+  cartItems = [];
+
+  cartTotal = 0;
 
   constructor(private msg: MessengerService) {}
 
   ngOnInit() {
     this.msg.getMsg().subscribe((product: Product) => {
+      this.addProductToCart(product);
+    });
+  }
+
+  addProductToCart(product: Product) {
+    let productExists = false;
+
+    for (let i in this.cartItems) {
+      if (this.cartItems[i].productId === product.id) {
+        this.cartItems[i].qty++;
+        productExists = true;
+        break;
+      }
+    }
+
+    if (!productExists) {
       this.cartItems.push({
+        productId: product.id,
+        imageUrl: product.imageUrl,
         productName: product.name,
+        qty: 1,
+        price: product.price,
       });
+    }
+
+    this.cartTotal = 0;
+    this.cartItems.forEach((item) => {
+      this.cartTotal += item.qty * item.price;
     });
   }
 }

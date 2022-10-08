@@ -9,7 +9,7 @@ export class MessengerService {
 
   constructor() {}
 
-  sendMsg(product: any) {
+  sendMsg(product) {
     this.subject.next(product);
   }
 

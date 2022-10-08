@@ -42,5 +42,60 @@
       "age": "0001-03-31",
       "id": 6
     }
-  ]
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Razer BlackWidow V3 A Bathing Ape - Switch Verde",
+      "cutprice": "1018,44",
+      "price": "918,44",
+      "installmentMultiplier": "3",
+      "installmentValue": "306",
+      "discount": "10",
+      "imageUrl": "https://assets3.razerzone.com/Ieg_GHSv5HjDVCD2s-b6sNJAccE=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh6b%2Fh53%2F9420855967774%2Fbape-blackwidow-v3-500x500.png"
+    },
+    {
+      "id": 2,
+      "name": "Headset Gamer Fallen Morcego, Surround Virtual 7.1, Cancelamento de Ruído, Drivers 53mm",
+      "cutprice": "588,12",
+      "price": "399,99",
+      "installmentMultiplier": "10",
+      "installmentValue": "47,05",
+      "discount": "15",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vH8gq.fone.png"
+    },
+    {
+      "id": 3,
+      "name": "Mouse Gamer Redragon Cobra, Chroma RGB, 12400DPI, 7 Botões, Preto",
+      "cutprice": "176,35",
+      "price": "109,89",
+      "installmentMultiplier": "5",
+      "installmentValue": "25,85",
+      "discount": "15",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHHVW.Mouse.png"
+    },
+    {
+      "id": 4,
+      "name": "Controle Sem Fio Xbox Pulse Red",
+      "cutprice": "684,11",
+      "price": "449,90",
+      "installmentMultiplier": "10",
+      "installmentValue": "47,35",
+      "discount": "5",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHg0C.Controle.png"
+    },
+    {
+      "id": 5,
+      "name": "Processador Intel Core i5-10400, Cache 12MB, 2.9GHz (4.3GHz Max Turbo), LGA 1200",
+      "cutprice": "1.529,40",
+      "price": "999,00",
+      "installmentMultiplier": "10",
+      "installmentValue": "117,64",
+      "discount": "15",
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHJ5T.Processador.png"
+    }
+  ],
+
+  "cart": []
 }

@@ -3,12 +3,12 @@
     <img [src]="cartItem.imageUrl" />
   </div>
   <div class="itemName">
-    <p>{{ cartItem.productName }}</p>
+    <p>{{ cartItem.productName | slice: 0:28 }}...</p>
   </div>
   <div class="itemQtn">
     <p>{{ cartItem.qty }}</p>
   </div>
   <div class="itemPrice">
-    <p>{{ cartItem.price }}</p>
+    <p>R$ {{ cartItem.price }}</p>
   </div>
 </div>

@@ -7,6 +7,7 @@ export class Product {
   installmentValue: string;
   discount: string;
   imageUrl: string;
+  imageSize: string;
 
   constructor(
     id = 1,
@@ -16,7 +17,8 @@ export class Product {
     installmentMultiplier = '',
     installmentValue = '',
     discount = '',
-    imageUrl = ''
+    imageUrl = '',
+    imageSize = ''
   ) {
     this.id = id;
     this.name = name;
@@ -26,5 +28,6 @@ export class Product {
     this.installmentValue = installmentValue;
     this.discount = discount;
     this.imageUrl = imageUrl;
+    this.imageSize = imageSize;
   }
 }

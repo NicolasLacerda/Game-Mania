@@ -53,7 +53,8 @@
       "installmentMultiplier": "3",
       "installmentValue": "306",
       "discount": "10",
-      "imageUrl": "https://assets3.razerzone.com/Ieg_GHSv5HjDVCD2s-b6sNJAccE=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh6b%2Fh53%2F9420855967774%2Fbape-blackwidow-v3-500x500.png"
+      "imageUrl": "https://assets3.razerzone.com/Ieg_GHSv5HjDVCD2s-b6sNJAccE=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh6b%2Fh53%2F9420855967774%2Fbape-blackwidow-v3-500x500.png",
+      "imageSize": "imgGrande"
     },
     {
       "id": 2,
@@ -63,7 +64,8 @@
       "installmentMultiplier": "10",
       "installmentValue": "47,05",
       "discount": "15",
-      "imageUrl": "https://i.im.ge/2022/10/07/1vH8gq.fone.png"
+      "imageUrl": "https://i.im.ge/2022/10/07/1vH8gq.fone.png",
+      "imageSize": "imgMedia"
     },
     {
       "id": 3,
@@ -73,7 +75,8 @@
       "installmentMultiplier": "5",
       "installmentValue": "25,85",
       "discount": "15",
-      "imageUrl": "https://i.im.ge/2022/10/07/1vHHVW.Mouse.png"
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHHVW.Mouse.png",
+      "imageSize": "imgPequena"
     },
     {
       "id": 4,
@@ -83,7 +86,8 @@
       "installmentMultiplier": "10",
       "installmentValue": "47,35",
       "discount": "5",
-      "imageUrl": "https://i.im.ge/2022/10/07/1vHg0C.Controle.png"
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHg0C.Controle.png",
+      "imageSize": "imgMedia"
     },
     {
       "id": 5,
@@ -93,7 +97,8 @@
       "installmentMultiplier": "10",
       "installmentValue": "117,64",
       "discount": "15",
-      "imageUrl": "https://i.im.ge/2022/10/07/1vHJ5T.Processador.png"
+      "imageUrl": "https://i.im.ge/2022/10/07/1vHJ5T.Processador.png",
+      "imageSize": "imgPequena"
     }
   ],
 

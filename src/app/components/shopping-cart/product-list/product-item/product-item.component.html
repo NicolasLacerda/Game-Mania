@@ -7,7 +7,11 @@
 
   <div class="imagemAnuncio">
     <a routerLink="/">
-      <img class="imgMedia" [src]="productItem.imageUrl" alt="" />
+      <img
+        [class]="productItem.imageSize"
+        [src]="productItem.imageUrl"
+        alt=""
+      />
     </a>
   </div>
 

@@ -6,6 +6,17 @@
   margin-bottom: 30px;
   margin-top: 30px;
   overflow: hidden;
+  justify-content: center;
+  flex-direction: row;
+}
+
+app-product-list {
+  display: flex;
+}
+
+_ngcontent-qhh-c55 {
+  height: 100%;
+  width: 100%;
 }
 
 .carouselPosition {

@@ -44,27 +44,21 @@
     </div>
   </nav>
 
-  <div class="carrinhoPosition" style="display: none">
+  <div class="carrinhoPosition" style="display: flex">
     <div id="carrinho">
       <div id="exitCarrinho">
         <img class="close" src="/assets/img/Icones/x.png" />
       </div>
 
       <div class="itensComprados">
-        <div class="emptyBagPosition">
-          <div class="emptyBag">
-            <img src="/assets/img/Icones/Bolsa/Bag 2.png" />
-          </div>
-
-          <p>Seu Carrinho está vazio.</p>
+        <div class="cart">
+          <app-cart></app-cart>
         </div>
-
-        <div class="cart"></div>
       </div>
 
       <div class="listBottom">
         <div class="totalPriceText"><p>Preço total:</p></div>
-        <div class="totalPrice"><p>R$123,50</p></div>
+        <div class="totalPrice"><p>js do total</p></div>
       </div>
     </div>
   </div>

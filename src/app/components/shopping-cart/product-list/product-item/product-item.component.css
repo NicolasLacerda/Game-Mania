@@ -1,0 +1,209 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bloco {
+  width: 250px;
+  height: 100%;
+  margin-right: 20px;
+  -webkit-font-smoothing: antialiased;
+  transition: ease all 0.5s;
+  position: relative;
+}
+
+.topItens {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 40px;
+  top: 0px;
+  justify-content: space-between;
+}
+
+.heartPosition {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.coracao {
+  background-image: url(/assets/img/Icones/coracaoVazio.png);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heartPosition .active {
+  background-image: url(/assets/img/Icones/coracao.png);
+  -webkit-font-smoothing: antialiased;
+}
+
+.imagemAnuncio {
+  width: 100%;
+  height: 250px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.imagemAnuncio img {
+  transition: 0.5s;
+  object-fit: contain;
+}
+
+.imagemAnuncio img:hover {
+  transform: scale(1.05);
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+
+.imagemAnuncio a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgGrande {
+  width: 225px;
+  height: 225px;
+}
+
+.imgMedia {
+  width: 175px;
+  height: 175px;
+}
+
+.imgPequena {
+  width: 125px;
+  height: 125px;
+}
+
+.containerContent {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #222222;
+  transition: ease all 0.5s;
+}
+
+.productName {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  padding: 10px;
+  color: white;
+  text-align: justify;
+  transition: ease all 0.5s;
+}
+
+.bottomContent {
+  width: 100%;
+  height: 60%;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  padding: 10px;
+}
+
+.pricePosition {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.cut {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 11px;
+}
+
+.price {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: ease all 0.5s;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.priceText {
+  width: 100%;
+  height: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 11px;
+  transition: ease all 0.5s;
+}
+
+.marketButton {
+  width: 80px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  font-size: 14.5px;
+  color: #222222;
+  font-weight: bold;
+}
+
+.marketButton:hover {
+  background-color: transparent;
+  color: gainsboro;
+  border: 1px solid gainsboro;
+}
+
+.blocoPixPosition {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.blocoPix {
+  width: 45px;
+  height: 25px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+.blocoPix p {
+  font-size: 13px;
+  color: white;
+}

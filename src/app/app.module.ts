@@ -14,6 +14,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FiltersComponent } from './components/shopping-cart/filters/filters.component';
+import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
+import { CartComponent } from './components/shopping-cart/cart/cart.component';
+import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
+import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,12 @@ import { MatIconModule } from '@angular/material/icon';
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
+    ShoppingCartComponent,
+    FiltersComponent,
+    ProductListComponent,
+    CartComponent,
+    ProductItemComponent,
+    CartItemComponent,
   ],
   imports: [
     BrowserModule,

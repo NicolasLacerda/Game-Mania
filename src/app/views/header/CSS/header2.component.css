@@ -10,7 +10,7 @@
 
 #carrinho {
   background-color: white;
-  width: 400px;
+  width: 450px;
   height: 100%;
   flex-direction: column;
   border-radius: 5px;
@@ -37,36 +37,6 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-}
-
-.emptyBagPosition {
-  height: 100%;
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.emptyBag {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.emptyBag img {
-  -webkit-font-smoothing: antialiased;
-  width: 115px;
-  height: 160px;
-}
-
-.emptyBagPosition p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .loginPositionNotLogged {
@@ -246,11 +216,21 @@
 .totalPrice {
   width: 30%;
   height: 100%;
-  border-left: 1px solid gainsboro;
   border-bottom-right-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cart {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+app-cart {
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 1680px) {

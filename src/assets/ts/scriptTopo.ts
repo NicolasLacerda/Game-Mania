@@ -2,10 +2,6 @@ import * as $ from 'jquery';
 
 const scriptTopo = () => {
   $('#icon1').click(function () {
-    $('.carrinhoPosition').animate({ width: 'toggle' }, 300);
-  });
-
-  $('#icon1').click(function () {
     $('.loginPositionNotLogged').animate({ width: 'hide' }, 1);
   });
 

@@ -6,7 +6,7 @@
     <p>Seu Carrinho está vazio.</p>
   </div>
 </div>
-<ul *ngIf="cartItems.length > 0">
+<ul class="teste" *ngIf="cartItems.length > 0">
   <li class="list-group-item" *ngFor="let item of cartItems">
     <app-cart-item [cartItem]="item"></app-cart-item>
   </li>

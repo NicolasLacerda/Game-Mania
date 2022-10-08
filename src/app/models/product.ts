@@ -2,7 +2,7 @@ export class Product {
   id: number;
   name: string;
   cutprice: string;
-  price: string;
+  price: number;
   installmentMultiplier: string;
   installmentValue: string;
   discount: string;
@@ -14,7 +14,7 @@ export class Product {
     id = 1,
     name = '',
     cutprice = '',
-    price = '',
+    price = 0,
     installmentMultiplier = '',
     installmentValue = '',
     discount = '',

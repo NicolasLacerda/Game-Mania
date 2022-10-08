@@ -45,6 +45,9 @@ const scriptTopo = () => {
 
     $(this).data('clicks', !clicks);
   });
+
+  let teste23 = document.getElementById('total');
+  console.log(teste23);
 };
 
 export default scriptTopo;

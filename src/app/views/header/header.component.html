@@ -58,7 +58,11 @@
 
       <div class="listBottom">
         <div class="totalPriceText"><p>Preço total:</p></div>
-        <div class="totalPrice"><p>js do total</p></div>
+        <div class="totalPrice">
+          <li class="list-group-item active">
+            <div id="total">{{ cartTotal | currency: "R$" }}</div>
+          </li>
+        </div>
       </div>
     </div>
   </div>

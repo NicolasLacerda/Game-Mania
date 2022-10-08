@@ -54,7 +54,8 @@
       "installmentValue": "306",
       "discount": "10",
       "imageUrl": "https://assets3.razerzone.com/Ieg_GHSv5HjDVCD2s-b6sNJAccE=/500x500/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh6b%2Fh53%2F9420855967774%2Fbape-blackwidow-v3-500x500.png",
-      "imageSize": "imgGrande"
+      "imageSize": "imgGrande",
+      "qtn": "319"
     },
     {
       "id": 2,
@@ -65,7 +66,8 @@
       "installmentValue": "47,05",
       "discount": "15",
       "imageUrl": "https://i.im.ge/2022/10/07/1vH8gq.fone.png",
-      "imageSize": "imgMedia"
+      "imageSize": "imgMedia",
+      "qtn": "91"
     },
     {
       "id": 3,
@@ -76,7 +78,8 @@
       "installmentValue": "25,85",
       "discount": "15",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHHVW.Mouse.png",
-      "imageSize": "imgPequena"
+      "imageSize": "imgPequena",
+      "qtn": "942"
     },
     {
       "id": 4,
@@ -87,7 +90,8 @@
       "installmentValue": "47,35",
       "discount": "5",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHg0C.Controle.png",
-      "imageSize": "imgMedia"
+      "imageSize": "imgMedia",
+      "qtn": "412"
     },
     {
       "id": 5,
@@ -98,7 +102,8 @@
       "installmentValue": "117,64",
       "discount": "15",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHJ5T.Processador.png",
-      "imageSize": "imgPequena"
+      "imageSize": "imgPequena",
+      "qtn": "2312"
     },
     {
       "id": 6,
@@ -109,7 +114,8 @@
       "installmentValue": "287,36",
       "discount": "5",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHKE1.Lenovo.png",
-      "imageSize": "imgMedia"
+      "imageSize": "imgMedia",
+      "qtn": "591"
     },
     {
       "id": 7,
@@ -120,7 +126,8 @@
       "installmentValue": "280,00",
       "discount": "12",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHeEx.zotac3060.png",
-      "imageSize": "imgMedia"
+      "imageSize": "imgMedia",
+      "qtn": "832"
     },
     {
       "id": 8,
@@ -131,7 +138,8 @@
       "installmentValue": "26,14",
       "discount": "15",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHvr0.Mouse2.png",
-      "imageSize": "imgMedia"
+      "imageSize": "imgMedia",
+      "qtn": "875"
     },
     {
       "id": 9,
@@ -142,7 +150,8 @@
       "installmentValue": "111,10",
       "discount": "37",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHVvf.Microfone.png",
-      "imageSize": "imgPequena"
+      "imageSize": "imgPequena",
+      "qtn": "588"
     },
     {
       "id": 10,
@@ -153,7 +162,8 @@
       "installmentValue": "50,58",
       "discount": "15",
       "imageUrl": "https://i.im.ge/2022/10/07/1vHBML.Teclado2.png",
-      "imageSize": "imgPequena"
+      "imageSize": "imgPequena",
+      "qtn": "966"
     }
   ],
 

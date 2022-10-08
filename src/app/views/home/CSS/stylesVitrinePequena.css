@@ -1,5 +1,5 @@
 .vitrineTipo2 {
-  height: 830px;
+  height: 870px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,14 +21,14 @@
 }
 
 .carouselPosition1 {
-  height: 400px;
+  height: 420px;
   width: 70%;
   display: block;
   overflow: hidden;
 }
 
 .carouselPosition2 {
-  height: 400px;
+  height: 420px;
   width: 70%;
   display: block;
   overflow: hidden;

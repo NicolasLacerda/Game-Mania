@@ -1,5 +1,19 @@
 <div class="bloco">
   <div class="topItens">
+    <div class="qtn">
+      <p>RESTAM</p>
+      <p
+        style="
+          font-size: 0.6875rem;
+          line-height: 0.75rem;
+          font-weight: 700;
+          margin: 0.125rem 0px;
+        "
+      >
+        {{ productItem.qtn }}
+      </p>
+      <p>UNID.</p>
+    </div>
     <div class="heartPosition">
       <div class="coracao"></div>
     </div>
@@ -17,24 +31,26 @@
 
   <div class="containerContent">
     <div class="productName">
-      <p>{{ productItem.name | slice: 0:65 }}...</p>
+      <p>{{ productItem.name | slice: 0:100 }}</p>
     </div>
 
     <div class="bottomContent">
       <div class="pricePosition">
-        <div class="cut">
-          <s>R$ {{ productItem.cutprice }}</s>
-        </div>
+        <div class="priceContent">
+          <div class="cut">
+            <s>R$ {{ productItem.cutprice }}</s>
+          </div>
 
-        <div class="price">
-          <p>R$ {{ productItem.price }}</p>
-        </div>
+          <div class="price">
+            <p>R$ {{ productItem.price }}</p>
+          </div>
 
-        <div class="priceText">
-          <p>
-            {{ productItem.installmentMultiplier }}x de R$
-            {{ productItem.installmentValue }} sem juros
-          </p>
+          <div class="priceText">
+            <p>
+              {{ productItem.installmentMultiplier }}x de R$
+              {{ productItem.installmentValue }} sem juros
+            </p>
+          </div>
         </div>
 
         <div class="blocoPix">

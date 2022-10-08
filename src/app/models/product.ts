@@ -8,6 +8,7 @@ export class Product {
   discount: string;
   imageUrl: string;
   imageSize: string;
+  qtn: string;
 
   constructor(
     id = 1,
@@ -18,7 +19,8 @@ export class Product {
     installmentValue = '',
     discount = '',
     imageUrl = '',
-    imageSize = ''
+    imageSize = '',
+    qtn = ''
   ) {
     this.id = id;
     this.name = name;
@@ -29,5 +31,6 @@ export class Product {
     this.discount = discount;
     this.imageUrl = imageUrl;
     this.imageSize = imageSize;
+    this.qtn = qtn;
   }
 }

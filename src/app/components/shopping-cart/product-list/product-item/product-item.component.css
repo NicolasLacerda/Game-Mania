@@ -13,7 +13,7 @@ p {
 
 .topItens {
   display: flex;
-  position: absolute;
+  position: relative;
   width: 100%;
   max-width: 300px;
   height: 40px;
@@ -44,6 +44,25 @@ p {
 .heartPosition .active {
   background-image: url(/assets/img/Icones/coracao.png);
   -webkit-font-smoothing: antialiased;
+}
+
+.qtn {
+  width: 40px;
+  height: 100%;
+  border: 1px solid #f18f01;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.qtn p {
+  color: #f18f01;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  font-weight: 400;
+  margin-top: 0.0625rem;
 }
 
 .imagemAnuncio {
@@ -93,7 +112,7 @@ p {
 
 .containerContent {
   width: 250px;
-  height: 200px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,7 +127,6 @@ p {
   justify-content: flex-start;
   align-items: flex-start;
   font-size: 13px;
-  padding: 10px;
   font-weight: 600;
   color: black;
   text-align: justify;
@@ -122,7 +140,6 @@ p {
   flex-direction: column;
   align-items: flex-end;
   display: flex;
-  padding: 10px;
 }
 
 .pricePosition {
@@ -132,6 +149,12 @@ p {
   align-items: center;
   justify-content: center;
   color: white;
+  flex-direction: row;
+}
+
+.priceContent {
+  width: calc(100% - 45px);
+  display: flex;
   flex-direction: column;
 }
 
@@ -141,8 +164,8 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  font-size: 11px;
-  color: black;
+  font-size: 14px;
+  color: gray;
 }
 
 .price {
@@ -152,9 +175,9 @@ p {
   justify-content: flex-start;
   align-items: center;
   transition: ease all 0.5s;
-  font-size: 17px;
-  font-weight: bold;
-  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f18f01;
 }
 
 .priceText {
@@ -163,9 +186,9 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-size: 11px;
+  font-size: 14px;
   transition: ease all 0.5s;
-  color: black;
+  color: gray;
 }
 
 .marketButton {
@@ -184,8 +207,8 @@ p {
 
 .marketButton:hover {
   background-color: transparent;
-  color: gainsboro;
-  border: 1px solid gainsboro;
+  color: #f18f01;
+  border: 1px solid #f18f01;
 }
 
 .blocoPixPosition {

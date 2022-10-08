@@ -207,9 +207,11 @@
 
     <section class="vitrineTipo2">
       <div class="vitrineSuperior">
+        <div class="bar5"></div>
+
         <div class="carouselPosition1">
           <div class="carousel">
-            <div class="fileira7">
+            <div class="fileira5">
               <div
                 class="blocoPosition"
                 *ngFor="let product of productList | slice: 0:3"
@@ -217,9 +219,19 @@
                 <app-product-item [productItem]="product"></app-product-item>
               </div>
             </div>
+
+            <div class="fileira6">
+              <div
+                class="blocoPosition"
+                *ngFor="let product of productList | slice: 3:6"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div class="bar6"></div>
         <div class="squareBannerPosition">
           <a routerLink="/"
             ><img
@@ -231,8 +243,19 @@
       </div>
 
       <div class="vitrineInferior">
+        <div class="bar7"></div>
+
         <div class="carouselPosition2">
           <div class="carousel">
+            <div class="fileira7">
+              <div
+                class="blocoPosition"
+                *ngFor="let product of productList | slice: 0:3"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+            </div>
+
             <div class="fileira8">
               <div
                 class="blocoPosition"
@@ -243,6 +266,8 @@
             </div>
           </div>
         </div>
+
+        <div class="bar8"></div>
 
         <div class="squareBannerPosition">
           <a routerLink="/"

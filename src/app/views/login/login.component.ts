@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { RequestLogin } from 'src/app/models/requestLogin';
 import { LoginService } from 'src/app/services/login.service';
-import * as $ from 'jquery';
 import scriptHeaderLogged from 'src/assets/ts/scriptHeaderLogged';
-import scriptHeaderNotLogged from 'src/assets/ts/scriptHeaderNotLogged';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-login',
@@ -14,13 +14,23 @@ import scriptHeaderNotLogged from 'src/assets/ts/scriptHeaderNotLogged';
 export class LoginComponent implements OnInit {
   public requestLogin: RequestLogin;
 
-  constructor(private loginService: LoginService, private router: Router) {}
+  constructor(
+    private loginService: LoginService,
+    private router: Router,
+    private _renderer: Renderer2,
+    private _http: HttpClient
+  ) {}
 
   ngOnInit(): void {
     $('#icon1').css('display', 'none');
     $('.textMenu').css('display', 'none');
     $('.caixaDePesquisaPosition').css('display', 'none');
     this.requestLogin = new RequestLogin();
+    let script = this._renderer.createElement('script');
+    script.defer = true;
+    script.async = true;
+    script.src = 'https://www.google.com/recaptcha/api.js';
+    this._renderer.appendChild(document.body, script);
   }
 
   public doLogin(): void {
@@ -58,5 +68,9 @@ export class LoginComponent implements OnInit {
         console.error(error);
       }
     );
+  }
+
+  resolved(token) {
+    console.log(token);
   }
 }

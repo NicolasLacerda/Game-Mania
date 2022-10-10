@@ -18,6 +18,9 @@ import { ProductListComponent } from './components/shopping-cart/product-list/pr
 import { CartComponent } from './components/shopping-cart/cart/cart.component';
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 import { CartItemComponent } from './components/shopping-cart/cart/cart-item/cart-item.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { NgxCaptchaModule } from 'ngx-captcha';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -41,6 +44,10 @@ import { CartItemComponent } from './components/shopping-cart/cart/cart-item/car
     MatTableModule,
     MatButtonModule,
     MatIconModule,
+    ReactiveFormsModule,
+    NgxCaptchaModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

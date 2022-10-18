@@ -41,9 +41,17 @@
       "phone": "3133113131",
       "age": "0001-03-31",
       "id": 6
+    },
+    {
+      "email": "asasdasd@gmail.com",
+      "password": "$2a$10$8VXl717Xfpdr6EpsIrs4LubWyGy7mpSD74DDGBIVLMr.8tcGlJJ7u",
+      "firstname": "teste32",
+      "lastname": "teste32",
+      "phone": "313131",
+      "age": "0001-03-31",
+      "id": 7
     }
   ],
-
   "products": [
     {
       "id": 1,
@@ -97,7 +105,7 @@
       "id": 5,
       "name": "Processador Intel Core i5-10400, Cache 12MB, 2.9GHz (4.3GHz Max Turbo), LGA 1200",
       "cutprice": "1.529,40",
-      "price": 999.0,
+      "price": 999,
       "installmentMultiplier": "10",
       "installmentValue": "117,64",
       "discount": "15",
@@ -166,6 +174,5 @@
       "qtn": "966"
     }
   ],
-
   "cart": []
 }

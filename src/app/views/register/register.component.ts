@@ -3,6 +3,9 @@ import { RequestRegister } from 'src/app/models/requestRegister';
 import { RegisterService } from 'src/app/services/register.service';
 import * as $ from 'jquery';
 import { Router } from '@angular/router';
+import scriptError from 'src/assets/ts/error';
+import emailError from 'src/assets/ts/emailError';
+import passwordError from 'src/assets/ts/passwordError';
 
 @Component({
   selector: 'app-register',
@@ -11,6 +14,7 @@ import { Router } from '@angular/router';
 })
 export class RegisterComponent implements OnInit {
   public requestRegister: RequestRegister;
+  requestLogin: any;
 
   constructor(
     private registerService: RegisterService,
@@ -25,6 +29,32 @@ export class RegisterComponent implements OnInit {
   }
 
   public doRegister(): void {
+    const blacklist: string[] = [
+      'select ',
+      'from ',
+      'drop ',
+      'or ',
+      'having ',
+      'group ',
+      'by ',
+      'insert ',
+      'exec ',
+      '"',
+      "'",
+      '-',
+      '#',
+      '*',
+      ';',
+    ];
+
+    blacklist.forEach((word) => {
+      if (this.requestRegister.email.toLocaleLowerCase().includes(word)) {
+        alert(`Entrada Negada. ' ${word} ' Não é um caractere válido`);
+        scriptError();
+        return;
+      }
+    });
+
     this.registerService.doLogin(this.requestRegister).subscribe(
       (data) => {
         $('.registered').addClass('active');
@@ -36,10 +66,10 @@ export class RegisterComponent implements OnInit {
       },
       (error) => {
         if (error.error == 'Email format is invalid') {
-          $('.inputContainerEmail').css('color', 'red');
-          $('.emailRegister').css('border-bottom', '1px solid red');
-          $('.emailRegister').attr('placeholder', 'Email Inválido');
-          $('.imagePositionEmail').addClass('active');
+          emailError();
+        } else if ($('.senha1') == $('.senha2')) {
+          return;
+          passwordError();
         }
         console.error(error);
       }

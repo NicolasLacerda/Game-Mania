@@ -23,7 +23,9 @@
               mais poderoso do que nunca.
             </p>
           </div>
-          <a class="bot" routerLink="/">Explore esse mundo</a>
+          <div class="buttonPosition">
+            <a class="button" routerLink="/">Explore esse mundo</a>
+          </div>
         </div>
       </div>
 
@@ -42,7 +44,9 @@
           <div class="subTitulo">
             <p>Para todas os gostos nós possuimos seu console favorito.</p>
           </div>
-          <a class="bot" routerLink="/">Venha Jogar</a>
+          <div class="buttonPosition">
+            <a class="button" routerLink="/">Venha Jogar</a>
+          </div>
         </div>
       </div>
 
@@ -56,12 +60,14 @@
 
         <div class="carouselText">
           <div class="titulo">
-            <font color="#000"><h1>Gamers Club</h1></font>
+            <h1>Gamers Club</h1>
           </div>
           <div class="subTitulo">
-            <font color="#000"><p>O clube pra quem joga sério.</p></font>
+            <p>O clube pra quem joga sério.</p>
           </div>
-          <a class="bot" routerLink="/">Conheça mais</a>
+          <div class="buttonPosition">
+            <a class="button" routerLink="/">Conheça Mais</a>
+          </div>
         </div>
       </div>
     </div>
@@ -107,8 +113,32 @@
         <div class="carousel">
           <div class="fileira1">
             <div
-              class="blocoPosition"
-              *ngFor="let product of productList | slice: 5:10"
+              class="bloco1"
+              *ngFor="let product of productList | slice: 0:1"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco2"
+              *ngFor="let product of productList | slice: 1:2"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco3"
+              *ngFor="let product of productList | slice: 2:3"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco4"
+              *ngFor="let product of productList | slice: 3:4"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco5"
+              *ngFor="let product of productList | slice: 4:5"
             >
               <app-product-item [productItem]="product"></app-product-item>
             </div>
@@ -116,8 +146,32 @@
 
           <div class="fileira2">
             <div
-              class="blocoPosition"
-              *ngFor="let product of productList | slice: 0:5"
+              class="bloco1"
+              *ngFor="let product of productList | slice: 5:6"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco2"
+              *ngFor="let product of productList | slice: 6:7"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco3"
+              *ngFor="let product of productList | slice: 7:8"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco4"
+              *ngFor="let product of productList | slice: 8:9"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco5"
+              *ngFor="let product of productList | slice: 9:10"
             >
               <app-product-item [productItem]="product"></app-product-item>
             </div>
@@ -147,8 +201,32 @@
         <div class="carousel">
           <div class="fileira3">
             <div
-              class="blocoPosition"
-              *ngFor="let product of productList | slice: 5:10"
+              class="bloco1"
+              *ngFor="let product of productList | slice: 0:1"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco2"
+              *ngFor="let product of productList | slice: 1:2"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco3"
+              *ngFor="let product of productList | slice: 2:3"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco4"
+              *ngFor="let product of productList | slice: 3:4"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco5"
+              *ngFor="let product of productList | slice: 4:5"
             >
               <app-product-item [productItem]="product"></app-product-item>
             </div>
@@ -156,8 +234,32 @@
 
           <div class="fileira4">
             <div
-              class="blocoPosition"
-              *ngFor="let product of productList | slice: 0:5"
+              class="bloco1"
+              *ngFor="let product of productList | slice: 5:6"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco2"
+              *ngFor="let product of productList | slice: 6:7"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco3"
+              *ngFor="let product of productList | slice: 7:8"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco4"
+              *ngFor="let product of productList | slice: 8:9"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco5"
+              *ngFor="let product of productList | slice: 9:10"
             >
               <app-product-item [productItem]="product"></app-product-item>
             </div>
@@ -205,8 +307,20 @@
           <div class="carousel">
             <div class="fileira5">
               <div
-                class="blocoPosition"
-                *ngFor="let product of productList | slice: 0:3"
+                class="smallBlock1"
+                *ngFor="let product of productList | slice: 0:1"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock2"
+                *ngFor="let product of productList | slice: 1:2"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock3"
+                *ngFor="let product of productList | slice: 2:3"
               >
                 <app-product-item [productItem]="product"></app-product-item>
               </div>
@@ -214,8 +328,20 @@
 
             <div class="fileira6">
               <div
-                class="blocoPosition"
-                *ngFor="let product of productList | slice: 3:6"
+                class="smallBlock1"
+                *ngFor="let product of productList | slice: 5:6"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock2"
+                *ngFor="let product of productList | slice: 6:7"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock3"
+                *ngFor="let product of productList | slice: 7:8"
               >
                 <app-product-item [productItem]="product"></app-product-item>
               </div>
@@ -241,8 +367,20 @@
           <div class="carousel">
             <div class="fileira7">
               <div
-                class="blocoPosition"
-                *ngFor="let product of productList | slice: 0:3"
+                class="smallBlock1"
+                *ngFor="let product of productList | slice: 0:1"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock2"
+                *ngFor="let product of productList | slice: 1:2"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock3"
+                *ngFor="let product of productList | slice: 2:3"
               >
                 <app-product-item [productItem]="product"></app-product-item>
               </div>
@@ -250,8 +388,20 @@
 
             <div class="fileira8">
               <div
-                class="blocoPosition"
-                *ngFor="let product of productList | slice: 3:6"
+                class="smallBlock1"
+                *ngFor="let product of productList | slice: 5:6"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock2"
+                *ngFor="let product of productList | slice: 6:7"
+              >
+                <app-product-item [productItem]="product"></app-product-item>
+              </div>
+              <div
+                class="smallBlock3"
+                *ngFor="let product of productList | slice: 7:8"
               >
                 <app-product-item [productItem]="product"></app-product-item>
               </div>
@@ -291,8 +441,32 @@
         <div class="carousel">
           <div class="fileira9">
             <div
-              class="blocoPosition"
-              *ngFor="let product of productList | slice: 5:10"
+              class="bloco1"
+              *ngFor="let product of productList | slice: 0:1"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco2"
+              *ngFor="let product of productList | slice: 1:2"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco3"
+              *ngFor="let product of productList | slice: 2:3"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco4"
+              *ngFor="let product of productList | slice: 3:4"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco5"
+              *ngFor="let product of productList | slice: 4:5"
             >
               <app-product-item [productItem]="product"></app-product-item>
             </div>
@@ -300,8 +474,32 @@
 
           <div class="fileira10">
             <div
-              class="blocoPosition"
-              *ngFor="let product of productList | slice: 0:5"
+              class="bloco1"
+              *ngFor="let product of productList | slice: 5:6"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco2"
+              *ngFor="let product of productList | slice: 6:7"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco3"
+              *ngFor="let product of productList | slice: 7:8"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco4"
+              *ngFor="let product of productList | slice: 8:9"
+            >
+              <app-product-item [productItem]="product"></app-product-item>
+            </div>
+            <div
+              class="bloco5"
+              *ngFor="let product of productList | slice: 9:10"
             >
               <app-product-item [productItem]="product"></app-product-item>
             </div>

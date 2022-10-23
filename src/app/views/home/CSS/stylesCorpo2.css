@@ -74,3 +74,19 @@
     display: flex;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+    line-height: 1.875rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .socialIcons img {
+    height: 35px;
+  }
+}

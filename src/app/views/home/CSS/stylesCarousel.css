@@ -115,13 +115,21 @@ input {
 .carouselText {
   position: absolute;
   z-index: 2;
-  width: 100%;
+  width: calc(100vw - 400px);
   bottom: 35%;
   padding-left: 200px;
   padding-right: 200px;
+  transition: ease all 0.5s;
 }
 
-.carouselText .bot {
+.carouselText .buttonPosition {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.carouselText .button {
   display: block;
   width: fit-content;
   height: 45px;
@@ -134,14 +142,15 @@ input {
   color: black;
 }
 
-.carouselText .bot:hover {
+.carouselText .button:hover {
   background-color: transparent;
   color: white;
   border: solid 1px white;
 }
 
 .carouselText .titulo {
-  display: block;
+  display: flex;
+  justify-content: center;
   color: #fff;
   margin-bottom: 20px;
   height: 55px;
@@ -151,7 +160,8 @@ input {
 
 .carouselText .subTitulo {
   height: 40px;
-  display: block;
+  display: flex;
+  justify-content: center;
   color: #fff;
   margin-bottom: 20px;
   font-size: 20px;
@@ -176,6 +186,7 @@ input {
   .carouselText {
     padding-left: 150px;
     padding-right: 150px;
+    width: calc(100vw - 300px);
   }
 }
 
@@ -188,6 +199,7 @@ input {
   .carouselText {
     padding-left: 100px;
     padding-right: 100px;
+    width: calc(100vw - 200px);
   }
 }
 
@@ -200,6 +212,7 @@ input {
   .carouselText {
     padding-left: 50px;
     padding-right: 50px;
+    width: calc(100vw - 100px);
   }
 
   .carouselText .titulo {
@@ -215,6 +228,10 @@ input {
   .slider {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .carouselText {
+    width: 100vw;
   }
 
   .carouselText .titulo {
@@ -259,6 +276,15 @@ input {
 }
 
 @media only screen and (max-width: 600px) {
+  .carouselText {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 15%;
+  }
+
   .carouselText .titulo {
     font-size: 12px;
   }
@@ -300,5 +326,10 @@ input {
   .carouselText .bot {
     width: fit-content;
     height: 45px;
+  }
+
+  .h1,
+  h1 {
+    font-size: 24px;
   }
 }

@@ -44,7 +44,8 @@
 }
 
 .squareBanner {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 420px;
   border-radius: 5px;
   object-fit: fill;
@@ -57,88 +58,30 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.bloco5 {
-  width: 300px;
-  height: 100%;
-  margin-right: 10px;
-  -webkit-font-smoothing: antialiased;
+.smallBlock1 {
+  display: flex;
+  transition: ease all 0.5s;
 }
 
-.bloco6 {
-  width: 300px;
-  height: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
-  -webkit-font-smoothing: antialiased;
+.smallBlock2 {
+  display: flex;
+  transition: ease all 0.5s;
 }
 
-.bloco7 {
-  width: 300px;
-  height: 100%;
-  margin-left: 10px;
-  -webkit-font-smoothing: antialiased;
-}
-
-@media only screen and (max-width: 1880px) {
-  .bloco5 {
-    margin-right: 5px;
-  }
-
-  .bloco6 {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .bloco7 {
-    margin-left: 5px;
-  }
-}
-
-@media only screen and (max-width: 1600px) {
-  .bloco5 {
-    width: 250px;
-  }
-
-  .bloco6 {
-    width: 250px;
-  }
-
-  .bloco7 {
-    width: 250px;
-  }
+.smallBlock3 {
+  display: flex;
+  transition: ease all 0.5s;
 }
 
 @media only screen and (max-width: 1500px) {
-  .bloco5 {
-    width: 300px;
-  }
-
-  .bloco6 {
-    width: 300px;
-  }
-
-  .bloco7 {
+  .smallBlock3 {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1100px) {
-  .bloco5 {
-    width: 250px;
-  }
-
-  .bloco6 {
-    width: 250px;
-  }
-}
-
 @media only screen and (max-width: 960px) {
-  .bloco5 {
-    width: 350px;
-  }
-
-  .bloco6 {
-    width: 350px;
+  .squareBannerPosition {
+    display: none;
   }
 
   .carouselPosition1 {
@@ -148,34 +91,10 @@
   .carouselPosition2 {
     width: 100%;
   }
-
-  .squareBannerPosition {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 860px) {
-  .bloco5 {
-    width: 300px;
-  }
-
-  .bloco6 {
-    width: 300px;
-  }
 }
 
 @media only screen and (max-width: 750px) {
-  .bloco5 {
-    width: 350px;
-  }
-
-  .bloco6 {
+  .smallBlock2 {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  .bloco5 {
-    width: 250px;
   }
 }

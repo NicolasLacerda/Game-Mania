@@ -17,6 +17,10 @@ const scriptTopo = () => {
     $('.loginPositionNotLogged').animate({ height: 'toggle' }, 300);
   });
 
+  $('.registerBot').click(function () {
+    $('.loginPositionNotLogged').animate({ height: 'toggle' }, 300);
+  });
+
   $('#icon2').click(function () {
     $('.loginPositionNotLogged').animate({ height: 'toggle' }, 300);
   });

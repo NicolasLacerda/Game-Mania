@@ -164,7 +164,7 @@ body {
 }
 
 .loginButton {
-  display: none;
+  display: flex;
 }
 
 .buttonArea .loginButton input {

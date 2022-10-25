@@ -29,11 +29,6 @@ export class LoginComponent implements OnInit {
     $('.textMenu').css('display', 'none');
     $('.caixaDePesquisaPosition').css('display', 'none');
     this.requestLogin = new RequestLogin();
-    let script = this._renderer.createElement('script');
-    script.defer = true;
-    script.async = true;
-    script.src = 'https://www.google.com/recaptcha/api.js';
-    this._renderer.appendChild(document.body, script);
   }
 
   public doLogin(): void {
@@ -84,11 +79,5 @@ export class LoginComponent implements OnInit {
         console.error(error);
       }
     );
-  }
-
-  resolved(token) {
-    console.log(token);
-    $('.loginButton').css('display', 'flex');
-    $('.subtitle').css('display', 'none');
   }
 }
